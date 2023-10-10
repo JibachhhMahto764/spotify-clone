@@ -1,8 +1,8 @@
 console.log("Welcome to Spotify");
 // Initialize the variables
 let  songIndex = 0; 
-let audiioElement = New Audio('1.mp3');
-let Masterplay = document.getElementById('masterplay');
+let audiioElement = new Audio('1.mp3');
+let Masterplay = document.gAudioetElementById('masterplay');
 let myProgressBar = document.getElementById('masterplay');
 let gif = document.getElementById('gif');
 
@@ -29,10 +29,11 @@ Masterplay.addEventListener('click',() =>{
     }
 })
  // Listen to Events
- myProgressBar.addEventListener('timeupdate', () =>{
-console.log('timeupdate');
+ audiioElement.addEventListener('timeupdate', () =>{
 //update Seeker
-
-
-
+progress = parseInt((audiioElement.currentTime/audiioElement.duration)*100);
+myProgressBar.value = progress;
+ })
+ myProgressBar.addEventListener('change', ()=>{
+    audiioElement.currentTime = myProgressBar.value * audiioElement.duration/100;
  })
