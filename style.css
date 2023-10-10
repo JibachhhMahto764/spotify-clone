@@ -45,14 +45,14 @@ nav ul li {
 .container {
     min-height: 70vh;
     background-color: black;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: 'Varela Round', sans-serif;
     display: flex;
     width: 70%;
     border-radius: 12px;
     padding: 34px;
     margin: 23px auto;
-    background-image: url(./bg.png);
+    background-image: url(./cover.png);
 }
 
 .bottom {
@@ -82,8 +82,9 @@ nav ul li {
 }
 
 #myProgressBar {
-    width: 80vw;
+    width: 60vw;
     cursor: pointer;
+    align-items: end;
 }
 
 .SongItemContainer {
@@ -98,7 +99,7 @@ nav ul li {
     margin: 23px 0;
     justify-content: space-between;
     align-items: center;
-    border-radius: 34px;
+    border-radius: 40px;
 
 
 
@@ -112,7 +113,7 @@ nav ul li {
 }
 
 .timestamp {
-    margin: 0 23px;
+    margin: 10px 200px;
     cursor: pointer;
 }
 

@@ -35,5 +35,5 @@ progress = parseInt((audiioElement.currentTime/audiioElement.duration)*100);
 myProgressBar.value = progress;
  })
  myProgressBar.addEventListener('change', ()=>{
-    audiioElement.currentTime = myProgressBar.value * audiioElement.duration/100;
+    audiioElement.currentTime = myProgressBar.value * audiioElement.duration/100; 
  })
