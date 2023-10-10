@@ -1,80 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-body{
+
+body {
     background-color: rgb(237, 227, 191);
 }
-*{
-    margin: 0; 
+
+* {
+    margin: 0;
     padding: 0;
 
 }
-nav{
+
+nav {
     font-family: 'Ubuntu', sans-serif;
 }
-nav ul{
+
+nav ul {
     display: flex;
     align-items: center;
     list-style-type: none;
     height: 65px;
-    background-color:black;
+    background-color: black;
     color: white;
-    
+
 }
-nav ul li{
+
+nav ul li {
     padding: 0 13px;
 }
-.brand img{
+
+.brand img {
     width: 44px;
     padding: 0 8px;
- 
+
 }
-.brand{
+
+.brand {
     display: flex;
     align-items: center;
-    font-weight:bolder;
+    font-weight: bolder;
     font-size: 1.3re;
 }
-.container{
+
+.container {
     min-height: 70vh;
     background-color: black;
     color: white;
-    font-family:'Varela Round',sans-serif;
+    font-family: 'Varela Round', sans-serif;
     display: flex;
-    width:  70%;
+    width: 70%;
     border-radius: 12px;
     padding: 34px;
-    margin:23px auto;
+    margin: 23px auto;
     background-image: url(./bg.png);
 }
-.bottom{
-    position:sticky;
+
+.bottom {
+    position: sticky;
     bottom: 0;
     height: 130px;
     background-color: black;
     color: white;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 
 }
-.icons{
+
+.icons {
     margin-top: 14px;
 }
-.icons i{
-   cursor: pointer;
+
+.icons i {
+    cursor: pointer;
 
 }
-.SongList{
+
+.SongList {
     background-color: black;
 }
-#myProgressBar{
+
+#myProgressBar {
     width: 80vw;
 }
-.SongItemContainer{
+
+.SongItemContainer {
     margin-top: 71px;
 }
-.songItem{
+
+.songItem {
     height: 50px;
     display: flex;
     background-color: white;
@@ -87,13 +102,28 @@ nav ul li{
 
 
 }
-.songItem img{
+
+.songItem img {
     width: 43px;
-    margin:0 23px;
+    margin: 0 23px;
     border-radius: 34px;
 
 }
-.timestamp{
-    margin: 0 23px; 
+
+.timestamp {
+    margin: 0 23px;
     cursor: pointer;
+}
+
+.timestamp i {
+    cursor: pointer;
+}
+
+.songInfo {
+    position: absolute;
+    left:10vw;  
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 1s ease-in;
 }
