@@ -1,6 +1,6 @@
 # Spotify Clone
 
-![Spotify Clone Logo](https://yourdomain.com/logo.png)
+![Spotify Clone Logo]([https://yourdomain.com/logo.png](https://github.com/JibachhhMahto764/spotify-clone/blob/main/logo.png))
 
 ## Introduction
 
